@@ -141,8 +141,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold mb-1">البريد الإلكتروني</h3>
-                  <p className="text-muted-foreground">info@dengue-diagnosis.com</p>
-                  <p className="text-muted-foreground">support@dengue-diagnosis.com</p>
+                  <p className="text-muted-foreground">samiaomram2233@gmail.com</p>
                 </div>
               </div>
 
@@ -152,7 +151,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold mb-1">الهاتف</h3>
-                  <p className="text-muted-foreground">+966 11 234 5678</p>
+                  <p className="text-muted-foreground">0906250114</p>
                   <p className="text-muted-foreground">متاح: الأحد - الخميس، 8 ص - 6 م</p>
                 </div>
               </div>
@@ -164,8 +163,8 @@ const Contact = () => {
                 <div>
                   <h3 className="font-semibold mb-1">العنوان</h3>
                   <p className="text-muted-foreground">
-                    مركز التشخيص الطبي المتقدم<br />
-                    الرياض، المملكة العربية السعودية
+                    كلية علوم الحاسوب<br />
+                    الجامعة
                   </p>
                 </div>
               </div>
