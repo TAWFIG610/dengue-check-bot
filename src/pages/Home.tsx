@@ -13,23 +13,21 @@ const Home = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <h1 className="text-4xl md:text-5xl font-bold text-foreground leading-tight">
-                نظام تشخيص
-                <span className="text-primary block">حمى الضنك</span>
+                🧬 نظام ذكي لتشخيص حمى الضنك 
+                <span className="text-primary block">باستخدام تقنيات التعلم الآلي</span>
               </h1>
               <p className="text-xl text-muted-foreground">
-                أداة مساعدة ذكية للتشخيص المبكر لحمى الضنك باستخدام البيانات الطبية والأعراض.
-                احصل على تقييم أولي سريع ودقيق.
+                هذا النظام يساعد على التنبؤ بإصابة المريض بحمى الضنك بناءً على بياناته الطبية
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild variant="medical" size="lg" className="text-lg px-8 py-6">
                   <Link to="/diagnosis">
-                    <Activity className="h-5 w-5 ml-2" />
-                    ابدأ التشخيص الآن
+                    🧪 ابدأ التشخيص
                   </Link>
                 </Button>
                 <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6">
                   <Link to="/about">
-                    تعرف على المرض
+                    📖 عن المرض
                   </Link>
                 </Button>
               </div>
@@ -56,46 +54,60 @@ const Home = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
-          <Card className="text-center border-border">
+        <div className="grid md:grid-cols-4 gap-6">
+          <Card className="text-center border-border hover:shadow-lg transition-shadow">
             <CardHeader>
-              <div className="mx-auto w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                <Activity className="h-6 w-6 text-primary" />
+              <div className="mx-auto w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                <span className="text-2xl">🧪</span>
               </div>
-              <CardTitle className="text-xl">تشخيص سريع</CardTitle>
+              <CardTitle className="text-lg">ابدأ التشخيص</CardTitle>
             </CardHeader>
             <CardContent>
-              <CardDescription className="text-base">
-                احصل على نتائج التشخيص في ثوانٍ معدودة باستخدام خوارزميات متقدمة
-              </CardDescription>
+              <Button asChild variant="outline" className="w-full">
+                <Link to="/diagnosis">انقر هنا</Link>
+              </Button>
             </CardContent>
           </Card>
 
-          <Card className="text-center border-border">
+          <Card className="text-center border-border hover:shadow-lg transition-shadow">
             <CardHeader>
-              <div className="mx-auto w-12 h-12 bg-success/10 rounded-lg flex items-center justify-center mb-4">
-                <Shield className="h-6 w-6 text-success" />
+              <div className="mx-auto w-16 h-16 bg-success/10 rounded-lg flex items-center justify-center mb-4">
+                <span className="text-2xl">📖</span>
               </div>
-              <CardTitle className="text-xl">دقة عالية</CardTitle>
+              <CardTitle className="text-lg">عن المرض</CardTitle>
             </CardHeader>
             <CardContent>
-              <CardDescription className="text-base">
-                مبني على دراسات طبية موثقة ومعايير منظمة الصحة العالمية
-              </CardDescription>
+              <Button asChild variant="outline" className="w-full">
+                <Link to="/about">تعلم المزيد</Link>
+              </Button>
             </CardContent>
           </Card>
 
-          <Card className="text-center border-border">
+          <Card className="text-center border-border hover:shadow-lg transition-shadow">
             <CardHeader>
-              <div className="mx-auto w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                <Stethoscope className="h-6 w-6 text-primary" />
+              <div className="mx-auto w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                <span className="text-2xl">❓</span>
               </div>
-              <CardTitle className="text-xl">إرشاد طبي</CardTitle>
+              <CardTitle className="text-lg">المساعدة</CardTitle>
             </CardHeader>
             <CardContent>
-              <CardDescription className="text-base">
-                توصيات واضحة حول الخطوات التالية والحاجة لاستشارة طبية
-              </CardDescription>
+              <Button asChild variant="outline" className="w-full">
+                <Link to="/help">كيفية الاستخدام</Link>
+              </Button>
+            </CardContent>
+          </Card>
+
+          <Card className="text-center border-border hover:shadow-lg transition-shadow">
+            <CardHeader>
+              <div className="mx-auto w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                <span className="text-2xl">📞</span>
+              </div>
+              <CardTitle className="text-lg">تواصل معنا</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <Button asChild variant="outline" className="w-full">
+                <Link to="/contact">اتصل بنا</Link>
+              </Button>
             </CardContent>
           </Card>
         </div>
@@ -112,8 +124,7 @@ const Home = () => {
           </p>
           <Button asChild variant="medical" size="lg" className="text-lg px-12 py-6">
             <Link to="/diagnosis">
-              <Activity className="h-5 w-5 ml-2" />
-              ابدأ التشخيص الآن
+              🧪 ابدأ التشخيص الآن
             </Link>
           </Button>
         </div>

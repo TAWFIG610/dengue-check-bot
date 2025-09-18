@@ -53,10 +53,20 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 
       {/* Footer */}
       <footer className="bg-muted border-t border-border">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <div className="text-center text-muted-foreground">
-            <p>© 2024 نظام تشخيص حمى الضنك. جميع الحقوق محفوظة.</p>
-            <p className="text-sm mt-2">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <div className="text-center text-muted-foreground space-y-4">
+            <p className="font-semibold">© 2025 مشروع: نظام تشخيص مرض حمى الضنك باستخدام تقنيات التعلم الآلي</p>
+            <div className="text-sm space-y-1">
+              <p className="font-medium">تم تطويره بواسطة فريق العمل:</p>
+              <div className="flex flex-wrap justify-center gap-x-8 gap-y-1">
+                <span>• أماني عبدالقادر أحمد عيسى</span>
+                <span>• إيلاف محمد كرار الأمين</span>
+                <span>• سامية إدريس عثمان همد</span>
+                <span>• عائشة أيوب صالح علي</span>
+              </div>
+              <p className="italic mt-2">كلية علوم الحاسوب – الجامعة</p>
+            </div>
+            <p className="text-sm mt-4 pt-4 border-t border-border">
               تنبيه: هذا النظام مساعد تشخيصي وليس بديلاً عن استشارة الطبيب المختص
             </p>
           </div>
