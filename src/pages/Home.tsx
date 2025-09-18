@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Activity, Shield, Stethoscope } from "lucide-react";
 import heroImage from "@/assets/hero-medical.jpg";
+import logoImage from "@/assets/logo.jpg";
 
 const Home = () => {
   return (
@@ -12,8 +13,15 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
+              <div className="flex items-center justify-center lg:justify-start mb-6">
+                <img 
+                  src={logoImage} 
+                  alt="شعار نظام تشخيص حمى الضنك" 
+                  className="w-24 h-24 object-contain"
+                />
+              </div>
               <h1 className="text-4xl md:text-5xl font-bold text-foreground leading-tight">
-                🧬 نظام ذكي لتشخيص حمى الضنك 
+                نظام ذكي لتشخيص حمى الضنك 
                 <span className="text-primary block">باستخدام تقنيات التعلم الآلي</span>
               </h1>
               <p className="text-xl text-muted-foreground">
