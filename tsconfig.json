@@ -1,16 +1,22 @@
 {
-  "files": [],
-  "references": [{ "path": "./tsconfig.app.json" }, { "path": "./tsconfig.node.json" }],
+  "files": [], // لا توجد ملفات محددة مباشرة، يعتمد على الملفات المشار إليها
+
+  // 🔗 الإشارة إلى ملفات إعداد أخرى
+  "references": [
+    { "path": "./tsconfig.app.json" }, // إعدادات التطبيق (الواجهة)
+    { "path": "./tsconfig.node.json" } // إعدادات بيئة Node (الخادم أو الأدوات)
+  ],
+
   "compilerOptions": {
-    "baseUrl": ".",
+    "baseUrl": ".", // المسار الأساسي للمشروع
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"] // إنشاء اختصار @ يشير إلى مجلد src
     },
-    "noImplicitAny": false,
-    "noUnusedParameters": false,
-    "skipLibCheck": true,
-    "allowJs": true,
-    "noUnusedLocals": false,
-    "strictNullChecks": false
+    "noImplicitAny": false,     // يسمح باستخدام any بدون تحذير
+    "noUnusedParameters": false, // لا يحذر عند وجود معاملات غير مستخدمة
+    "skipLibCheck": true,        // يتجاهل فحص أخطاء المكتبات الخارجية
+    "allowJs": true,             // يسمح بملفات JavaScript داخل المشروع
+    "noUnusedLocals": false,     // لا يحذر عند وجود متغيرات غير مستخدمة
+    "strictNullChecks": false    // لا يجبرك على فحص القيم الفارغة (null/undefined)
   }
 }
