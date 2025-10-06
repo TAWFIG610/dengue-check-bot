@@ -1,30 +1,32 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
-    "useDefineForClassFields": true,
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
-    "module": "ESNext",
-    "skipLibCheck": true,
+    "target": "ES2020",                // الإصدار المستهدف من JavaScript
+    "useDefineForClassFields": true,   // أسلوب حديث لتعريف خصائص الكلاسات
+    "lib": ["ES2020", "DOM", "DOM.Iterable"], // مكتبات متاحة (للويب والـ DOM)
+    "module": "ESNext",                // نظام الموديولات الحديث (ES Modules)
+    "skipLibCheck": true,              // تجاهل فحص مكتبات خارجية
 
-    /* Bundler mode */
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "isolatedModules": true,
-    "moduleDetection": "force",
-    "noEmit": true,
-    "jsx": "react-jsx",
+    /* وضع التجميع (Bundler mode) */
+    "moduleResolution": "bundler",     // طريقة حل الموديولات (تتوافق مع Vite)
+    "allowImportingTsExtensions": true, // يسمح باستيراد ملفات .ts مباشرة
+    "isolatedModules": true,           // كل ملف يُفحص بشكل مستقل
+    "moduleDetection": "force",        // يجبر TypeScript على اكتشاف الموديولات
+    "noEmit": true,                    // لا يُنتج ملفات JS (Vite يقوم بذلك)
+    "jsx": "react-jsx",                // يدعم JSX بأسلوب React الحديث
 
-    /* Linting */
-    "strict": false,
-    "noUnusedLocals": false,
-    "noUnusedParameters": false,
-    "noImplicitAny": false,
-    "noFallthroughCasesInSwitch": false,
+    /* الفحص والتحقق */
+    "strict": false,                   // تعطيل الفحص الصارم (أكثر مرونة)
+    "noUnusedLocals": false,           // لا يُحذّر من المتغيرات غير المستخدمة
+    "noUnusedParameters": false,       // لا يُحذّر من المعاملات غير المستخدمة
+    "noImplicitAny": false,            // يسمح بـ any بدون تحذير
+    "noFallthroughCasesInSwitch": false, // لا يتحقق من نسيان break في switch
 
-    "baseUrl": ".",
+    /* المسارات */
+    "baseUrl": ".",                    // المسار الأساسي للمشروع
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"]               // استخدام @ بدل كتابة src في المسارات
     }
   },
-  "include": ["src"]
+
+  "include": ["src"]                   // يشمل كل ملفات المجلد src فقط
 }
