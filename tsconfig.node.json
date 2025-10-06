@@ -1,22 +1,22 @@
 {
   "compilerOptions": {
-    "target": "ES2022",
-    "lib": ["ES2023"],
-    "module": "ESNext",
-    "skipLibCheck": true,
+    "target": "ES2022",               // تحديد إصدار JavaScript الناتج (حديث)
+    "lib": ["ES2023"],                // استخدام مكتبة JavaScript الحديثة (ES2023)
+    "module": "ESNext",               // نوع الموديول المستخدم (حديث - ES Modules)
+    "skipLibCheck": true,             // تجاهل فحص أخطاء المكتبات الخارجية
 
-    /* Bundler mode */
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "isolatedModules": true,
-    "moduleDetection": "force",
-    "noEmit": true,
+    /* إعدادات التجميع (Bundler mode) */
+    "moduleResolution": "bundler",    // طريقة حل الموديولات (متوافقة مع Vite)
+    "allowImportingTsExtensions": true, // يسمح باستيراد ملفات .ts مباشرة
+    "isolatedModules": true,          // يجعل كل ملف يعمل بشكل منفصل لتجنب الأخطاء
+    "moduleDetection": "force",       // يفرض على TypeScript التعرف على الموديولات
+    "noEmit": true,                   // لا يُصدر ملفات JavaScript بعد التحويل (Vite يتكفل بذلك)
 
-    /* Linting */
-    "strict": true,
-    "noUnusedLocals": false,
-    "noUnusedParameters": false,
-    "noFallthroughCasesInSwitch": true
+    /* إعدادات الفحص (Linting) */
+    "strict": true,                   // تفعيل الفحص الصارم للأنواع
+    "noUnusedLocals": false,          // لا يُحذّر عند وجود متغيرات غير مستخدمة
+    "noUnusedParameters": false,      // لا يُحذّر عند وجود معاملات غير مستخدمة
+    "noFallthroughCasesInSwitch": true // يمنع الأخطاء في جمل switch عند نسيان break
   },
-  "include": ["vite.config.ts"]
+  "include": ["vite.config.ts"]        // يشمل ملف إعداد Vite فقط في الفحص
 }
