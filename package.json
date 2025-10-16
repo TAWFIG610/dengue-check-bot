@@ -1,38 +1,51 @@
 {
-  "name": "vite_react_shadcn_ts",     // 🔹 اسم المشروع
-  "private": true,                    // 🔹 يمنع نشر المشروع بالخطأ على npm
-  "version": "0.0.0",                 // 🔹 رقم الإصدار
-  "type": "module",                   // 🔹 يحدد أن المشروع يستخدم ES Modules
-
+  "name": "vite_react_shadcn_ts",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "dev": "vite",                    // ▶️ لتشغيل المشروع في وضع التطوير
-    "build": "vite build",            // 🏗️ لبناء نسخة الإنتاج
-    "build:dev": "vite build --mode development", // 🔧 بناء نسخة تطوير
-    "lint": "eslint .",               // ✅ فحص الكود من الأخطاء
-    "preview": "vite preview"         // 👀 عرض نسخة الإنتاج محليًا
+    "dev": "vite",
+    "build": "vite build",
+    "build:dev": "vite build --mode development",
+    "lint": "eslint .",
+    "preview": "vite preview"
   },
-
-  "dependencies": {                   // 📦 مكتبات المشروع الرئيسية
-    "@hookform/resolvers": "^3.10.0", // لإدارة النماذج (forms)
-    "@radix-ui/react-*": "...",       // مكونات واجهة مستخدم جاهزة (UI components)
-    "@tanstack/react-query": "^5.83.0", // لإدارة البيانات والـ API
-    "class-variance-authority": "^0.7.1", // لتغيير الأنماط بسهولة
-    "clsx": "^2.1.1",                 // لدمج أسماء الفئات CSS بسهولة
-    "lucide-react": "^0.462.0",       // أيقونات SVG جاهزة
-    "react": "^18.3.1",               // مكتبة React
-    "react-dom": "^18.3.1",           // واجهة React للمتصفح
-    "react-router-dom": "^6.30.1",    // نظام التنقل بين الصفحات
-    "tailwindcss-animate": "^1.0.7",  // حركات جاهزة لـ Tailwind
-    "zod": "^3.25.76"                 // للتحقق من صحة البيانات
+  "dependencies": {
+    "@hookform/resolvers": "^3.10.0",
+    "@radix-ui/react-accordion": "^1.0.0",
+    "@radix-ui/react-alert-dialog": "^1.0.0",
+    "@radix-ui/react-avatar": "^1.0.0",
+    "@radix-ui/react-dialog": "^1.0.0",
+    "@radix-ui/react-dropdown-menu": "^1.0.0",
+    "@radix-ui/react-label": "^1.0.0",
+    "@radix-ui/react-menubar": "^1.0.0",
+    "@radix-ui/react-popover": "^1.0.0",
+    "@radix-ui/react-scroll-area": "^1.0.0",
+    "@radix-ui/react-select": "^1.0.0",
+    "@radix-ui/react-separator": "^1.0.0",
+    "@radix-ui/react-slider": "^1.0.0",
+    "@radix-ui/react-switch": "^1.0.0",
+    "@radix-ui/react-tabs": "^1.0.0",
+    "@radix-ui/react-toast": "^1.0.0",
+    "@radix-ui/react-toggle": "^1.0.0",
+    "@radix-ui/react-tooltip": "^1.0.0",
+    "@tanstack/react-query": "^5.83.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.462.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.30.1",
+    "tailwindcss-animate": "^1.0.7",
+    "zod": "^3.25.76"
   },
-
-  "devDependencies": {                // ⚙️ مكتبات التطوير فقط
-    "@vitejs/plugin-react-swc": "^3.11.0", // يدعم React في Vite بسرعة
-    "tailwindcss": "^3.4.17",         // إطار تصميم CSS سريع
-    "autoprefixer": "^10.4.21",       // لإضافة بادئات CSS تلقائيًا
-    "postcss": "^8.5.6",              // أداة معالجة CSS
-    "eslint": "^9.32.0",              // لتحليل الكود واكتشاف الأخطاء
-    "typescript": "^5.8.3",           // لغة TypeScript
-    "vite": "^5.4.19"                 // أداة التشغيل والبناء للمشروع
+  "devDependencies": {
+    "@vitejs/plugin-react-swc": "^3.11.0",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.32.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.8.3",
+    "vite": "^5.4.19"
   }
 }
